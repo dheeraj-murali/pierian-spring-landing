@@ -12,11 +12,11 @@ export const HeroMessage = () => {
 		>
 			<Heading size='2xl' my='3'>
 				Turn your{' '}
-				<Text as='span' color='brandGreen.500'>
+				<Text as='span' color='brandGreen.400'>
 					dreams
 				</Text>{' '}
 				into{' '}
-				<Text as='span' color='brandBlue.500'>
+				<Text as='span' color='brandBlue.400'>
 					reality
 				</Text>
 			</Heading>
