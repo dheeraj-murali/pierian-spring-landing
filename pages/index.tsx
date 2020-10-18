@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/core';
 import Head from 'next/head';
+import { GetStaticProps } from 'next';
 import { Header, Hero } from '../containers';
 
 export default function Home() {
@@ -91,3 +92,9 @@ export default function Home() {
 		</>
 	);
 }
+
+export const getStaticProps: GetStaticProps = async (context) => {
+	return {
+		props: {},
+	};
+};
