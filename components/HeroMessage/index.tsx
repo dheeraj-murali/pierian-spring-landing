@@ -24,7 +24,7 @@ export const HeroMessage = () => {
 				We help you fine tune your mind and knowledge, helping you
 				become the best of you
 			</Text>
-			<Button variantColor='brandBlue' my='3'>
+			<Button variantColor='green' my='3' shadow='lg' size='lg'>
 				Sign up
 			</Button>
 		</Flex>
