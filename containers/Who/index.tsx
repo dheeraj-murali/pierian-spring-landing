@@ -17,7 +17,7 @@ export const Who = () => {
 				w={{ base: 'xs', sm: 'sm', md: 'sm', lg: 'md', xl: 'xl' }}
 				my='8'
 				textAlign={{ base: 'center', md: 'left' }}
-				p='5'
+				p='2'
 			>
 				<Heading my='5'>Who we are</Heading>
 				<Text>

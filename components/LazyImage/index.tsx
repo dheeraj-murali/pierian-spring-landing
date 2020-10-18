@@ -8,7 +8,7 @@ export const LazyImage = (props: LazyImageProps) => {
 
 	return (
 		<Box pos='relative' w='full' h='full' style={style} overflow='hidden'>
-			{/* <Image
+			<Image
 				pos='absolute'
 				top='0'
 				left='0'
@@ -19,10 +19,10 @@ export const LazyImage = (props: LazyImageProps) => {
 				loading='lazy'
 				opacity={imageLoaded ? 1 : 0}
 				onLoad={() => setImageLoaded(true)}
-			/> */}
+			/>
 
 			<Image
-				// opacity={imageLoaded ? 0 : 1}
+				opacity={imageLoaded ? 0 : 1}
 				w='full'
 				h='full'
 				src={src}

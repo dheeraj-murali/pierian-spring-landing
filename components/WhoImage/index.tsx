@@ -1,4 +1,5 @@
 import { Box, Image } from '@chakra-ui/core';
+import { LazyImage } from '../LazyImage';
 
 export const WhoImage = () => {
 	return (
@@ -12,14 +13,11 @@ export const WhoImage = () => {
 			}}
 			my='8'
 		>
-			<Image
-				loading='lazy'
-				w='full'
-				h='full'
+			<LazyImage
 				src='images/who.jpg'
-				alt='student at perian spring'
-				fallbackSrc='images/who-0.jpg'
-				borderRadius='24rem 42rem 24rem 42rem'
+				lazyImage='images/who-0.jpg'
+				alt='pharmacist with medicines in hand'
+				style={{ borderRadius: '24rem 42rem 24rem 42rem' }}
 			/>
 		</Box>
 	);
