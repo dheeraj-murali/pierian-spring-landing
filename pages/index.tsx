@@ -1,7 +1,8 @@
 import { Box } from '@chakra-ui/core';
-import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import { Header, Hero } from '../containers';
+import Head from 'next/head';
+import React from 'react';
+import { Header, Hero, Who } from '../containers';
 
 export default function Home() {
 	return (
@@ -88,6 +89,7 @@ export default function Home() {
 			<Box h='100vh' w='100vw'>
 				<Header />
 				<Hero />
+				<Who />
 			</Box>
 		</>
 	);

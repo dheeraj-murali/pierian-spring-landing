@@ -1,5 +1,4 @@
 import { Box, Image } from '@chakra-ui/core';
-import { LazyImage } from '..';
 
 export const HeroImage = () => {
 	return (
@@ -15,13 +14,16 @@ export const HeroImage = () => {
 				transform: 'rotate(-10deg)',
 			}}
 		>
-			<LazyImage
+			<Image
+				loading='lazy'
+				w='full'
+				h='full'
 				src='images/hero.jpg'
 				alt='student at perian spring'
-				lazyImage='images/hero-0.jpg'
+				fallbackSrc='images/hero-0.jpg'
+				borderRadius='24rem 24rem 46rem 24rem'
 				style={{
 					transform: 'rotate(10deg)',
-					borderRadius: '24rem 24rem 46rem 24rem',
 				}}
 			/>
 		</Box>
