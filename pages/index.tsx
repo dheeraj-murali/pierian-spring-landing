@@ -1,5 +1,6 @@
-import { Box, Flex, Heading } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/core';
 import Head from 'next/head';
+import { Header } from '../containers';
 
 export default function Home() {
 	return (
@@ -83,16 +84,9 @@ export default function Home() {
 				/>
 				<meta name='theme-color' content='#ffffff'></meta>
 			</Head>
-			<Flex
-				h='100vh'
-				w='full'
-				justifyContent='center'
-				alignItems='center'
-			>
-				<Heading as='h1' size='2xl' color='brandGreen.500'>
-					Pierian Spring
-				</Heading>
-			</Flex>
+			<Box h='100vh' w='full'>
+				<Header />
+			</Box>
 		</>
 	);
 }
