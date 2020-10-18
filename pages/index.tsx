@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/core';
 import Head from 'next/head';
-import { Header } from '../containers';
+import { Header, Hero } from '../containers';
 
 export default function Home() {
 	return (
@@ -84,8 +84,9 @@ export default function Home() {
 				/>
 				<meta name='theme-color' content='#ffffff'></meta>
 			</Head>
-			<Box h='100vh' w='full'>
+			<Box h='100vh' w='100vw'>
 				<Header />
+				<Hero />
 			</Box>
 		</>
 	);
