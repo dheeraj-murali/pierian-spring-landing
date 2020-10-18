@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider theme={customTheme}>
 			<CSSReset />
-			<ColorModeProvider>
-				<Component {...pageProps} />
-			</ColorModeProvider>
+			{/* <ColorModeProvider> */}
+			<Component {...pageProps} />
+			{/* </ColorModeProvider> */}
 		</ThemeProvider>
 	);
 }
