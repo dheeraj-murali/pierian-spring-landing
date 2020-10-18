@@ -13,7 +13,7 @@ export const Hero = () => {
 			py='12'
 			bg='brandBlue.800'
 			style={{
-				background: 'linear-gradient(180deg, #204900 0%, #003442 100%)',
+				background: 'linear-gradient(180deg, #387703 0%, #0b566b 100%)',
 			}}
 		>
 			<HeroMessage />
