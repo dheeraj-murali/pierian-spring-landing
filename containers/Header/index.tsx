@@ -23,10 +23,10 @@ export const Header = () => {
 			>
 				<Logo />
 				<Flex display={{ base: 'none', md: 'block' }}>
-					<Button variant='outline' variantColor='green' mx='2'>
+					<Button variant='outline' variantColor='blue' mx='2'>
 						Log in
 					</Button>
-					<Button variantColor='brandBlue' mx='2' shadow='sm'>
+					<Button variantColor='green' mx='2' shadow='sm'>
 						Sign up
 					</Button>
 				</Flex>
