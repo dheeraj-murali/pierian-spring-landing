@@ -9,7 +9,7 @@ export const Who = () => {
 			flexWrap='wrap-reverse'
 			w='full'
 			py={{ base: '2', md: '10', lg: '20' }}
-			px={{ xl: '20' }}
+			px={{ base: '5', xl: '20' }}
 		>
 			<WhoImage />
 
