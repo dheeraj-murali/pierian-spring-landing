@@ -5,3 +5,4 @@ export { ItemImage } from './ItemImage';
 export { LazyImage } from './LazyImage';
 export { Logo } from './Logo';
 export { WhoImage } from './WhoImage';
+export { Card } from './Card';
