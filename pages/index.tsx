@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/core';
 import { GetStaticProps } from 'next';
 import React from 'react';
-import { Header, Hero, JoinSmall, SEO, Who } from '../containers';
+import { Header, Hero, JoinSmall, SEO, What, Who } from '../containers';
 
 export default function Home() {
 	return (
@@ -12,6 +12,7 @@ export default function Home() {
 				<Hero />
 				<Who />
 				<JoinSmall />
+				<What />
 			</Box>
 		</>
 	);

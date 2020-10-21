@@ -1,25 +1,28 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/core';
-import { WhoImage } from '../../components';
+import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/core';
+import React from 'react';
+import { ItemImage } from '..';
 
-export const Who = () => {
+export const Item = (prop: ItemProp) => {
+	const { revert } = prop;
+
 	return (
 		<Flex
 			alignItems='center'
 			justifyContent='space-around'
-			flexWrap='wrap-reverse'
+			flexDir={revert ? 'row-reverse' : 'row'}
+			flexWrap='wrap'
 			w='full'
-			py={{ base: '2', md: '10', lg: '20' }}
-			px={{ base: '5', xl: '20' }}
+			my='5'
+			px={{ xl: '10' }}
 		>
-			<WhoImage />
-
 			<Box
-				w={{ base: 'xs', sm: 'sm', md: 'sm', lg: 'md', xl: 'xl' }}
+				w={{ base: 'xs', sm: 'sm', xl: 'xl' }}
 				my='8'
 				textAlign={{ base: 'center', md: 'left' }}
 				p='2'
 			>
-				<Heading my='5'>Who we are</Heading>
+				<Heading>Who we are</Heading>
+				<Divider border='2px' />
 				<Text>
 					<Text as='span' color='brandGreen.600' fontWeight='bold'>
 						Pirian Spring
@@ -39,6 +42,12 @@ export const Who = () => {
 					justo, pulvinar. Id mattis a scelerisque donec.
 				</Text>
 			</Box>
+
+			<ItemImage />
 		</Flex>
 	);
 };
+
+interface ItemProp {
+	revert?: boolean;
+}
