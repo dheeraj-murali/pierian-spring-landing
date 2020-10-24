@@ -1,23 +1,12 @@
 // Sample card from Airbnb
 
-import { Box, Text } from '@chakra-ui/core';
+import { AspectRatioBox, Box, Divider, Text } from '@chakra-ui/core';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { LazyImage } from '../LazyImage';
 
-export const CardSmall = () => {
-	const property = {
-		imageUrl: 'https://bit.ly/2k1H1t6',
-		imageAlt: 'Rear view of modern home with pool',
-		beds: 3,
-		baths: 2,
-		title: 'Pathophysiology',
-		formattedPrice: '$1,900.00',
-		reviewCount: 34,
-		rating: 4,
-	};
-
+export const CardSmall = (prop: CardProps) => {
 	const [ref, inView] = useInView({ rootMargin: '-10%' });
 	const controls = useAnimation();
 
@@ -47,24 +36,28 @@ export const CardSmall = () => {
 					bg='white'
 				>
 					<Box
-						style={{
-							background:
-								'linear-gradient(90deg, #50a707 0%, #1a7894 100%)',
-						}}
-						pb='2'
+						h='70%'
+						overflow='hidden'
+						borderBottom='5px solid'
+						borderBottomColor='brandGreen.600'
 					>
 						<LazyImage
-							lazyImage={property.imageUrl}
-							src={property.imageUrl}
-							alt={property.imageAlt}
+							fallbackImage={prop.imageUrl}
+							src={prop.imageUrl}
+							alt={prop.title}
 						/>
 					</Box>
 
-					<Box p='5'>
-						<Text textAlign='center'>{property.title}</Text>
+					<Box h='full' p='5'>
+						<Text textAlign='center'>{prop.title}</Text>
 					</Box>
 				</Box>
 			</motion.div>
 		</Box>
 	);
 };
+
+declare interface CardProps {
+	imageUrl: string;
+	title: string;
+}

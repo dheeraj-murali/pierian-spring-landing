@@ -17,7 +17,7 @@ export const HeroImage = () => {
 		>
 			<LazyImage
 				src='images/hero.jpg'
-				lazyImage='images/hero-0.jpg'
+				fallbackImage='images/hero-0.jpg'
 				alt='student at perian spring'
 				style={{
 					transform: 'rotate(10deg)',

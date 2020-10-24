@@ -21,7 +21,11 @@ export const Who = () => {
 				p='2'
 			>
 				<Heading mb={{ base: 'xs', sm: 'sm', md: 'lg' }}>
-					The online learning platform for{' '}
+					The{' '}
+					<Text as='span' color='brandGreen.600' fontWeight='bold'>
+						online
+					</Text>{' '}
+					learning platform for{' '}
 					<Text as='span' color='brandBlue.600' fontWeight='bold'>
 						pharm.D
 					</Text>{' '}
@@ -37,9 +41,18 @@ export const Who = () => {
 				p='5'
 				pos='relative'
 			>
-				<CardSmall />
-				<CardSmall />
-				<CardSmall />
+				<CardSmall
+					imageUrl='images/Pathophysiology.jpg'
+					title='Pathophysiology'
+				/>
+				<CardSmall
+					imageUrl='images/Pharmacognosy.jpg'
+					title='Pharmacognosy'
+				/>
+				<CardSmall
+					imageUrl='images/Pharmacotherapeutics.jpg'
+					title='Pharmacotherapeutics'
+				/>
 				<Flex
 					size='2xs'
 					rounded='lg'

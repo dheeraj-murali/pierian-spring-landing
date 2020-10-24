@@ -15,8 +15,13 @@ export const What = () => {
 				World-class learning for anyone, anywhere
 			</Heading>
 
-			<Item />
-			<Item revert />
+			{[1, 2, 3, 4, 5].map((index) => {
+				if (index % 2 == 0) {
+					return <Item revert />;
+				} else {
+					return <Item />;
+				}
+			})}
 		</Flex>
 	);
 };
