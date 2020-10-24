@@ -37,6 +37,7 @@ export const Community = () => {
 				overflow='scroll'
 				display='inline-flex'
 				flexWrap='nowrap'
+				py='10'
 			>
 				<Card />
 				<Card />

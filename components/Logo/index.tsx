@@ -1,5 +1,4 @@
 import { Flex, Image } from '@chakra-ui/core';
-import { LazyImage } from '../LazyImage';
 
 export const Logo = () => {
 	return (

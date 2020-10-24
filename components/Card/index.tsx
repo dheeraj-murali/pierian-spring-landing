@@ -1,6 +1,4 @@
-// Sample card from Airbnb
-
-import { Box, Badge, Text, Heading } from '@chakra-ui/core';
+import { Box, Heading, Text } from '@chakra-ui/core';
 import React from 'react';
 import { LazyImage } from '../LazyImage';
 
@@ -28,14 +26,12 @@ export const Card = () => {
 			bg='white'
 		>
 			<Box
-				style={{
-					background:
-						'linear-gradient(90deg, #50a707 0%, #1a7894 100%)',
-				}}
-				pb='2'
+				h='2xs'
+				borderBottom='5px solid'
+				borderBottomColor='brandGreen.600'
 			>
 				<LazyImage
-					lazyImage={property.imageUrl}
+					fallbackImage={property.imageUrl}
 					src={property.imageUrl}
 					alt={property.imageAlt}
 				/>

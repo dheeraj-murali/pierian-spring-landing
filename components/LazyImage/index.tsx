@@ -1,8 +1,8 @@
 import { Box, Image } from '@chakra-ui/core';
-import { CSSProperties, useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 
 export const LazyImage = (props: LazyImageProps) => {
-	const { src, lazyImage, alt, style, borderRadius } = props;
+	const { src, fallbackImage, alt, style, borderRadius } = props;
 
 	const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -17,6 +17,7 @@ export const LazyImage = (props: LazyImageProps) => {
 				alt={alt}
 				w='full'
 				h='full'
+				objectFit='cover'
 				loading='lazy'
 				opacity={imageLoaded ? 1 : 0}
 				onLoad={() => setImageLoaded(true)}
@@ -27,9 +28,10 @@ export const LazyImage = (props: LazyImageProps) => {
 				opacity={imageLoaded ? 0 : 1}
 				w='full'
 				h='full'
+				objectFit='cover'
 				src={src}
 				alt={alt}
-				fallbackSrc={lazyImage}
+				fallbackSrc={fallbackImage}
 			/>
 		</Box>
 	);
@@ -37,7 +39,7 @@ export const LazyImage = (props: LazyImageProps) => {
 
 interface LazyImageProps {
 	src: string;
-	lazyImage: string;
+	fallbackImage: string;
 	alt: string;
 	style?: CSSProperties;
 	borderRadius?: string;
