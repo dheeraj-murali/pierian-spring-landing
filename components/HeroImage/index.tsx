@@ -1,4 +1,4 @@
-import { Box, Image } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/core';
 import { LazyImage } from '../LazyImage';
 
 export const HeroImage = () => {

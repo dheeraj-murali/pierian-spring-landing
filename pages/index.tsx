@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<>
 			<SEO />
-			<Box h='100vh' w='100vw'>
+			<Box>
 				<Header />
 				<Hero />
 				<Who />

@@ -7,6 +7,7 @@ export const HeroMessage = () => {
 			maxW='md'
 			m='5'
 			my={{ base: '5', lg: '10' }}
+			justifyContent='center'
 			textAlign={{ base: 'center', xl: 'left' }}
 		>
 			<Heading size='2xl' my='3' color='white'>

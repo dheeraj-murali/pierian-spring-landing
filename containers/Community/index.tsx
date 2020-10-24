@@ -15,7 +15,7 @@ export const Community = () => {
 			bg='gray.100'
 		>
 			<Box
-				w={{ base: 'xs', sm: 'sm', md: '40%' }}
+				w={{ base: 'xs', sm: 'sm', md: '40%', xl: '30%' }}
 				my='8'
 				textAlign={{ base: 'center', md: 'left' }}
 				p='2'
@@ -33,7 +33,7 @@ export const Community = () => {
 			</Box>
 
 			<Box
-				w={{ base: 'xs', sm: 'sm', md: '55%' }}
+				w={{ base: 'xs', sm: 'sm', md: '55%', xl: '60%' }}
 				overflow='scroll'
 				display='inline-flex'
 				flexWrap='nowrap'

@@ -11,7 +11,7 @@ export const JoinSmall = () => {
 			px='2'
 			bg='brandBlue.800'
 			style={{
-				background: 'linear-gradient(180deg, #387703 0%, #0b566b 100%)',
+				background: 'linear-gradient(90deg, #387703 0%, #0b566b 100%)',
 			}}
 		>
 			<Heading color='white' my='5'>

@@ -7,9 +7,9 @@ export const ItemImage = (prop: ItemImageProp) => {
 	return (
 		<Box
 			w={{ base: 'xs', md: 'xs', lg: 'md' }}
-			bg='white'
-			p='3'
-			borderRadius='42rem 32rem 34rem 22rem'
+			p='1'
+			borderRadius='lg'
+			shadow='lg'
 			style={{
 				background: 'linear-gradient(180deg, #50a707 0%, #1a7894 100%)',
 			}}

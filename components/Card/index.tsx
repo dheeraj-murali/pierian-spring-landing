@@ -6,7 +6,7 @@ import { LazyImage } from '../LazyImage';
 
 export const Card = () => {
 	const property = {
-		imageUrl: 'https://bit.ly/2Z4KKcF',
+		imageUrl: 'https://bit.ly/2k1H1t6',
 		imageAlt: 'Rear view of modern home with pool',
 		beds: 3,
 		baths: 2,
