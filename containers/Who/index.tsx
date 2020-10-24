@@ -20,7 +20,7 @@ export const Who = () => {
 				textAlign={{ base: 'center' }}
 				p='2'
 			>
-				<Heading mb='10'>
+				<Heading mb={{ base: 'xs', sm: 'sm', md: 'lg' }}>
 					The online learning platform for{' '}
 					<Text as='span' color='brandBlue.600' fontWeight='bold'>
 						pharm.D

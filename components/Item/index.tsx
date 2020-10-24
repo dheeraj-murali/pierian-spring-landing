@@ -27,7 +27,7 @@ export const Item = (prop: ItemProp) => {
 			px={{ xl: '10' }}
 		>
 			<motion.div
-				initial={{ scale: 1.2 }}
+				initial={{ scale: 0.2 }}
 				animate={controls}
 				transition={{
 					type: 'spring',
