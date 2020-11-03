@@ -18,7 +18,7 @@ export const Item = (prop: ItemProp) => {
 	return (
 		<Box ref={ref} w='full'>
 			<motion.div
-				initial={{ scale: 0.2 }}
+				initial={{ scale: 0.5 }}
 				animate={controls}
 				transition={{
 					type: 'spring',

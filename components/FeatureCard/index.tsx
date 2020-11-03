@@ -19,7 +19,7 @@ export const FeatureCard = (prop: CardProps) => {
 	return (
 		<Box ref={ref}>
 			<motion.div
-				initial={{ scale: 0.2 }}
+				initial={{ scale: 0.5 }}
 				animate={controls}
 				transition={{
 					type: 'spring',
