@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading } from '@chakra-ui/core';
 import React from 'react';
 
 export const Banner = (props: BannerProps) => {
-	const { size, title, subTitle, button } = props;
+	const { size, title, subtitle, button } = props;
 
 	const padding = {
 		base: size === 'sm' ? 0 : 5,

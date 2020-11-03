@@ -3,7 +3,7 @@ import React from 'react';
 import { generateTitle } from '../../utils/generateTitle';
 
 export const Hero = (props: HeroProps) => {
-	const { button, image, subTitle, title } = props;
+	const { button, image, subtitle, title } = props;
 
 	return (
 		<Flex
@@ -33,7 +33,7 @@ export const Hero = (props: HeroProps) => {
 				</Heading>
 
 				<Text my='3' color='white'>
-					{subTitle}
+					{subtitle}
 				</Text>
 
 				<Button my='3' shadow='lg' size='lg' {...button}>

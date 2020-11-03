@@ -25,7 +25,7 @@ interface HeroProps {
 	image: string;
 	button: Button;
 	title: Title;
-	subTitle: string;
+	subtitle: string;
 }
 
 interface Course {
@@ -36,7 +36,7 @@ interface Course {
 
 interface FeatureProps {
 	title: Title;
-	subTitle: string;
+	subtitle: string;
 	courseList: Course[];
 }
 
@@ -48,7 +48,7 @@ interface FeatureCardProps {
 
 interface Banner {
 	title: string;
-	subTitle: string | null;
+	subtitle: string | null;
 	button: Button;
 }
 
@@ -58,7 +58,7 @@ interface BannerProps extends Banner {
 
 interface Service {
 	title: string;
-	subTitle: string;
+	subtitle: string;
 	image: string;
 	data: null;
 }
@@ -69,8 +69,13 @@ interface ItemProps extends Service {
 
 interface ServicesProps {
 	title: string;
-	subTitle: string | null;
+	subtitle: string | null;
 	servicesList: Service[];
+}
+
+interface UpdateProps {
+	title: string;
+	subtitle: string;
 }
 
 interface HomePageProps {
@@ -80,4 +85,5 @@ interface HomePageProps {
 	bannerSmall: BannerProps;
 	bannerLarge: BannerProps;
 	service: ServicesProps;
+	updates: UpdateProps;
 }

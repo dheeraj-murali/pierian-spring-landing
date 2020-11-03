@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { LazyImage } from '..';
 
 export const Item = (prop: ItemProps) => {
-	const { revert, data, image, subTitle, title } = prop;
+	const { revert, data, image, subtitle, title } = prop;
 	const [ref, inView] = useInView({ rootMargin: '-10%' });
 	const controls = useAnimation();
 
@@ -42,7 +42,7 @@ export const Item = (prop: ItemProps) => {
 					>
 						<Heading size='lg'>{title}</Heading>
 						<Divider border='2px' />
-						<Text>{subTitle}</Text>
+						<Text>{subtitle}</Text>
 					</Box>
 
 					<Box

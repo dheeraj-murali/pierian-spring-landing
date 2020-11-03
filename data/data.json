@@ -34,7 +34,7 @@
 			"highlightGreen": "dreams",
 			"highlightBlue": "reality"
 		},
-		"subTitle": "We help you fine tune your mind and knowledge, helping you become the best of you"
+		"subtitle": "We help you fine tune your mind and knowledge, helping you become the best of you"
 	},
 	"featured": {
 		"title": {
@@ -42,7 +42,7 @@
 			"highlightGreen": "online",
 			"highlightBlue": "pharm.D"
 		},
-		"subTitle": "Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec.",
+		"subtitle": "Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec.",
 		"courseList": [
 			{
 				"courseName": "Pathophysiology",
@@ -68,7 +68,7 @@
 	},
 	"bannerSmall": {
 		"title": "Join 112+ students from around the world",
-		"subTitle": null,
+		"subtitle": null,
 		"button": {
 			"label": "Sign Up",
 			"url": "#",
@@ -78,23 +78,23 @@
 	},
 	"service": {
 		"title": "World-class learning for anyone, anywhere",
-		"subTitle": null,
+		"subtitle": null,
 		"servicesList": [
 			{
 				"title": "Similique corporis modi dolorem",
-				"subTitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"subtitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
 				"image": "images/who.jpg",
 				"data": null
 			},
 			{
 				"title": "Similique corporis modi dolorem",
-				"subTitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"subtitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
 				"image": "images/who.jpg",
 				"data": null
 			},
 			{
 				"title": "Similique corporis modi dolorem",
-				"subTitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"subtitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
 				"image": "images/who.jpg",
 				"data": null
 			}
@@ -106,7 +106,7 @@
 	},
 	"bannerLarge": {
 		"title": "Join 112+ students from around the world",
-		"subTitle": null,
+		"subtitle": null,
 		"button": {
 			"label": "Sign Up",
 			"url": "#",

@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 import { Item } from '../../components';
 
 export const Services = (props: ServicesProps) => {
-	const { title, subTitle, servicesList } = props;
+	const { title, subtitle, servicesList } = props;
 
 	return (
 		<Flex

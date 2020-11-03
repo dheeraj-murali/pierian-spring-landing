@@ -5,7 +5,7 @@ import { FeatureCard } from '../../components';
 import { generateTitle } from '../../utils/generateTitle';
 
 export const Featured = (props: FeatureProps) => {
-	const { courseList, subTitle, title } = props;
+	const { courseList, subtitle, title } = props;
 
 	return (
 		<Flex
@@ -51,7 +51,7 @@ export const Featured = (props: FeatureProps) => {
 				textAlign={{ base: 'center' }}
 				p='2'
 			>
-				<Text>{subTitle}</Text>
+				<Text>{subtitle}</Text>
 			</Box>
 		</Flex>
 	);
