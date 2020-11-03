@@ -1,12 +1,12 @@
-// Sample card from Airbnb
-
-import { Box, Text } from '@chakra-ui/core';
+import { Box, Flex, Heading, Text } from '@chakra-ui/core';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { LazyImage } from '../LazyImage';
 
-export const FeatureCard = (prop: CardProps) => {
+export const FeatureCard = (props: FeatureCardProps) => {
+	const { imageUrl, title, banner } = props;
+
 	const [ref, inView] = useInView({ rootMargin: '-10%' });
 	const controls = useAnimation();
 
@@ -15,6 +15,51 @@ export const FeatureCard = (prop: CardProps) => {
 			controls.start({ scale: 1 });
 		}
 	}, [controls, inView]);
+
+	const ImageCard = () => (
+		<Box
+			size='2xs'
+			rounded='lg'
+			overflow='hidden'
+			shadow='lg'
+			m='2'
+			bg='white'
+		>
+			<Box
+				h='70%'
+				overflow='hidden'
+				borderBottom='5px solid'
+				borderBottomColor='brandGreen.600'
+			>
+				<LazyImage
+					fallbackImage={imageUrl}
+					src={imageUrl}
+					alt={title}
+				/>
+			</Box>
+
+			<Box h='full' p='5'>
+				<Text textAlign='center'>{title}</Text>
+			</Box>
+		</Box>
+	);
+
+	const DataCard = () => (
+		<Flex
+			size='2xs'
+			rounded='lg'
+			shadow='lg'
+			p='5'
+			m='2'
+			justifyContent='center'
+			alignItems='center'
+			style={{
+				background: 'linear-gradient(90deg, #50a707 0%, #1a7894 100%)',
+			}}
+		>
+			<Heading color='white'>{title}</Heading>
+		</Flex>
+	);
 
 	return (
 		<Box ref={ref}>
@@ -27,37 +72,8 @@ export const FeatureCard = (prop: CardProps) => {
 					stiffness: 100,
 				}}
 			>
-				<Box
-					size='2xs'
-					rounded='lg'
-					overflow='hidden'
-					shadow='lg'
-					m='2'
-					bg='white'
-				>
-					<Box
-						h='70%'
-						overflow='hidden'
-						borderBottom='5px solid'
-						borderBottomColor='brandGreen.600'
-					>
-						<LazyImage
-							fallbackImage={prop.imageUrl}
-							src={prop.imageUrl}
-							alt={prop.title}
-						/>
-					</Box>
-
-					<Box h='full' p='5'>
-						<Text textAlign='center'>{prop.title}</Text>
-					</Box>
-				</Box>
+				{banner ? <DataCard /> : <ImageCard />}
 			</motion.div>
 		</Box>
 	);
 };
-
-declare interface CardProps {
-	imageUrl: string;
-	title: string;
-}

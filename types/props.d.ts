@@ -15,7 +15,7 @@ interface HeaderProps {
 	buttons: Button[];
 }
 
-interface HeroTitle {
+interface Title {
 	text: string;
 	highlightGreen: string;
 	highlightBlue: string;
@@ -24,11 +24,30 @@ interface HeroTitle {
 interface HeroProps {
 	image: string;
 	button: Button;
-	title: HeroTitle;
+	title: Title;
 	subTitle: string;
+}
+
+interface Course {
+	courseName: string | null;
+	courseImage: string | null;
+	banner: boolean;
+}
+
+interface FeatureProps {
+	title: Title;
+	subTitle: string;
+	courseList: Course[];
+}
+
+declare interface FeatureCardProps {
+	imageUrl: string;
+	title: string;
+	banner: boolean;
 }
 
 interface HomePageProps {
 	header: HeaderProps;
 	hero: HeroProps;
+	featured: FeatureProps;
 }

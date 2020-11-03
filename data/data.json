@@ -22,7 +22,7 @@
 		]
 	},
 	"hero": {
-		"image": "hero.jpg",
+		"image": "images/hero.jpg",
 		"button": {
 			"label": "Sign Up",
 			"url": "#",
@@ -37,17 +37,31 @@
 		"subTitle": "We help you fine tune your mind and knowledge, helping you become the best of you"
 	},
 	"featured": {
-		"title": "The online learning platform for pharm.D students.",
-		"sub-title": "Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec.",
-		"course-list": [
+		"title": {
+			"text": "The online learning platform for pharm.D students.",
+			"highlightGreen": "online",
+			"highlightBlue": "pharm.D"
+		},
+		"subTitle": "Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec.",
+		"courseList": [
 			{
-				"course-name": null,
-				"course-image": null,
+				"courseName": "Pathophysiology",
+				"courseImage": "images/Pathophysiology.jpg",
 				"banner": false
 			},
 			{
-				"course-name": "Courses on 100+ topics",
-				"course-image": null,
+				"courseName": "Pharmacognosy",
+				"courseImage": "images/Pharmacognosy.jpg",
+				"banner": false
+			},
+			{
+				"courseName": "Pharmacotherapeutics",
+				"courseImage": "images/Pharmacotherapeutics.jpg",
+				"banner": false
+			},
+			{
+				"courseName": "Courses on 100+ topics",
+				"courseImage": null,
 				"banner": true
 			}
 		]

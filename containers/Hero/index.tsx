@@ -15,7 +15,7 @@ export const Hero = (props: HeroProps) => {
 			pl={{ base: '0rem', xl: '10rem' }}
 			style={{
 				background: 'linear-gradient(180deg, #387703 0%, #0b566b 100%)',
-				backgroundImage: `linear-gradient(90deg, #387703e6 0%, #0b566b60 80%), url(images/${image})`,
+				backgroundImage: `linear-gradient(90deg, #387703e6 0%, #0b566b60 80%), url(${image})`,
 				backgroundSize: 'cover',
 				backgroundPosition: 'center center',
 			}}

@@ -1,17 +1,18 @@
 import { Text } from '@chakra-ui/core';
 import React from 'react';
+import { v4 } from 'uuid';
 
-export const generateTitle = (title: HeroTitle) => {
+export const generateTitle = (title: Title) => {
 	const { text } = title;
 
 	const blueHighlight = (
-		<Text as='span' color='brandBlue.400'>
+		<Text key={v4()} as='span' color='brandBlue.400'>
 			{' '}
 			{title.highlightBlue}
 		</Text>
 	);
 	const greenHighlight = (
-		<Text as='span' color='brandGreen.400'>
+		<Text key={v4()} as='span' color='brandGreen.400'>
 			{' '}
 			{title.highlightGreen}
 		</Text>
