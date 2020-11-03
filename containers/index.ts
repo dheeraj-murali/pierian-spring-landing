@@ -1,7 +1,7 @@
-export { Community } from './Community';
+export { Banner } from './Banner';
+export { Featured } from './Featured';
 export { Header } from './Header';
 export { Hero } from './Hero';
-export { Join } from './Join';
 export { SEO } from './SEO';
-export { What } from './What';
-export { Who } from './Who';
+export { Services } from './Services';
+export { Updates } from './Updates';

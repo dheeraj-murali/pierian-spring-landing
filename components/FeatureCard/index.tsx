@@ -1,12 +1,12 @@
 // Sample card from Airbnb
 
-import { AspectRatioBox, Box, Divider, Text } from '@chakra-ui/core';
+import { Box, Text } from '@chakra-ui/core';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { LazyImage } from '../LazyImage';
 
-export const CardSmall = (prop: CardProps) => {
+export const FeatureCard = (prop: CardProps) => {
 	const [ref, inView] = useInView({ rootMargin: '-10%' });
 	const controls = useAnimation();
 

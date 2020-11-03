@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading } from '@chakra-ui/core';
 import React from 'react';
 
-export const Join = (props: JoinProps) => {
+export const Banner = (props: JoinProps) => {
 	const { size } = props;
 
 	const padding = {

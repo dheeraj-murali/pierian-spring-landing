@@ -1,7 +1,8 @@
 import { Flex, Heading } from '@chakra-ui/core';
+import React from 'react';
 import { Item } from '../../components';
 
-export const What = () => {
+export const Services = () => {
 	return (
 		<Flex
 			flexDir='column'
@@ -17,9 +18,9 @@ export const What = () => {
 
 			{[1, 2, 3, 4, 5].map((index) => {
 				if (index % 2 == 0) {
-					return <Item revert />;
+					return <Item key={index} revert />;
 				} else {
-					return <Item />;
+					return <Item key={index} />;
 				}
 			})}
 		</Flex>

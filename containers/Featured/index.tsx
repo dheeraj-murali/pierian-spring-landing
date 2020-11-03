@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/core';
 import React from 'react';
-import { CardSmall } from '../../components';
+import { FeatureCard } from '../../components';
 
-export const Who = () => {
+export const Featured = () => {
 	return (
 		<Flex
 			alignItems='center'
@@ -12,8 +12,6 @@ export const Who = () => {
 			py={{ base: '2', md: '10', lg: '20' }}
 			px={{ base: '5', xl: '10' }}
 		>
-			{/* <WhoImage /> */}
-
 			<Box
 				w={{ base: 'xs', sm: 'sm', md: '5xl' }}
 				my='8'
@@ -41,15 +39,15 @@ export const Who = () => {
 				p='5'
 				pos='relative'
 			>
-				<CardSmall
+				<FeatureCard
 					imageUrl='images/Pathophysiology.jpg'
 					title='Pathophysiology'
 				/>
-				<CardSmall
+				<FeatureCard
 					imageUrl='images/Pharmacognosy.jpg'
 					title='Pharmacognosy'
 				/>
-				<CardSmall
+				<FeatureCard
 					imageUrl='images/Pharmacotherapeutics.jpg'
 					title='Pharmacotherapeutics'
 				/>

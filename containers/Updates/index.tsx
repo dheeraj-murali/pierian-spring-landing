@@ -1,8 +1,8 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/core';
+import { Box, Heading, Text } from '@chakra-ui/core';
 import React from 'react';
 import { Card } from '../../components';
 
-export const Community = () => {
+export const Updates = () => {
 	return (
 		<Box
 			display='inline-flex'

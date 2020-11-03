@@ -1,4 +1,5 @@
 import { Flex, Image } from '@chakra-ui/core';
+import React from 'react';
 
 export const Logo = () => {
 	return (
