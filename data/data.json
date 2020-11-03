@@ -22,12 +22,19 @@
 		]
 	},
 	"hero": {
+		"image": "hero.jpg",
 		"button": {
-			"button-text": "Sign Up",
-			"button-link": "#"
+			"label": "Sign Up",
+			"url": "#",
+			"variant": "solid",
+			"variantColor": "gray"
 		},
-		"title": "Turn your dreams into reality",
-		"sub-title": "We help you fine tune your mind and knowledge, helping you become the best of you"
+		"title": {
+			"text": "Turn your dreams into reality",
+			"highlightGreen": "dreams",
+			"highlightBlue": "reality"
+		},
+		"subTitle": "We help you fine tune your mind and knowledge, helping you become the best of you"
 	},
 	"featured": {
 		"title": "The online learning platform for pharm.D students.",

@@ -18,11 +18,8 @@ export default function Home(props: HomePageProps) {
 		<>
 			<SEO />
 			<Box>
-				<Header
-					buttons={props.header.buttons}
-					links={props.header.links}
-				/>
-				<Hero />
+				<Header {...props.header} />
+				<Hero {...props.hero} />
 				<Featured />
 				<Banner size='sm' />
 				<Services />
