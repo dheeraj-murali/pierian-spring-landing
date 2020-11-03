@@ -9,8 +9,11 @@ import {
 import React from 'react';
 import { MdMenu } from 'react-icons/md';
 import { Logo } from '../../components';
+import { v4 } from 'uuid';
 
-export const Header = () => {
+export const Header = (props: HeaderProps) => {
+	const { buttons, links } = props;
+
 	return (
 		<Box shadow='sm' w='full' bg='white'>
 			<Box
@@ -23,12 +26,16 @@ export const Header = () => {
 			>
 				<Logo />
 				<Flex display={{ base: 'none', md: 'block' }}>
-					<Button variant='outline' variantColor='blue' mx='2'>
-						Log in
-					</Button>
-					<Button variantColor='green' mx='2' shadow='sm'>
-						Sign up
-					</Button>
+					{buttons.map((button) => (
+						<Button
+							key={v4()}
+							variant={button.variant}
+							variantColor={button.variantColor}
+							mx='2'
+						>
+							{button.label}
+						</Button>
+					))}
 				</Flex>
 			</Box>
 

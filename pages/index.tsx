@@ -10,13 +10,18 @@ import {
 	Services,
 	Updates,
 } from '../containers';
+import fs from 'fs';
+import path from 'path';
 
-export default function Home() {
+export default function Home(props: HomePageProps) {
 	return (
 		<>
 			<SEO />
 			<Box>
-				<Header />
+				<Header
+					buttons={props.header.buttons}
+					links={props.header.links}
+				/>
 				<Hero />
 				<Featured />
 				<Banner size='sm' />
@@ -28,8 +33,16 @@ export default function Home() {
 	);
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
+	const dataDirectory = path.join(process.cwd(), 'data');
+	const dataFilePath = path.join(dataDirectory, 'data.json');
+
+	const rawData = fs.readFileSync(dataFilePath, 'utf8');
+	const data = JSON.parse(rawData.toString());
+
 	return {
-		props: {},
+		props: {
+			...data,
+		},
 	};
 };

@@ -1,19 +1,23 @@
 {
-	"navbar": {
-		"links": {
-			"about": {
+	"header": {
+		"links": [
+			{
 				"label": "About",
-				"link": "#about"
+				"url": "#about"
 			}
-		},
+		],
 		"buttons": [
 			{
-				"button-text": "Log in",
-				"button-link": "#"
+				"label": "Log in",
+				"url": "#",
+				"variant": "outline",
+				"variantColor": "blue"
 			},
 			{
-				"button-text": "Sign Up",
-				"button-link": "#"
+				"label": "Sign Up",
+				"url": "#",
+				"variant": "solid",
+				"variantColor": "green"
 			}
 		]
 	},
