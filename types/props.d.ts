@@ -40,14 +40,26 @@ interface FeatureProps {
 	courseList: Course[];
 }
 
-declare interface FeatureCardProps {
+interface FeatureCardProps {
 	imageUrl: string;
 	title: string;
 	banner: boolean;
+}
+
+interface Banner {
+	title: string;
+	subTitle: string | null;
+	button: Button;
+}
+
+interface BannerProps extends Banner {
+	size: 'sm' | 'lg';
 }
 
 interface HomePageProps {
 	header: HeaderProps;
 	hero: HeroProps;
 	featured: FeatureProps;
+	bannerSmall: BannerProps;
+	bannerLarge: BannerProps;
 }
