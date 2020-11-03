@@ -78,12 +78,24 @@
 	},
 	"service": {
 		"title": "World-class learning for anyone, anywhere",
-		"sub-title": null,
-		"services-list": [
+		"subTitle": null,
+		"servicesList": [
 			{
 				"title": "Similique corporis modi dolorem",
-				"sub-title": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
-				"image": "",
+				"subTitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"image": "images/who.jpg",
+				"data": null
+			},
+			{
+				"title": "Similique corporis modi dolorem",
+				"subTitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"image": "images/who.jpg",
+				"data": null
+			},
+			{
+				"title": "Similique corporis modi dolorem",
+				"subTitle": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"image": "images/who.jpg",
 				"data": null
 			}
 		]

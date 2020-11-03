@@ -22,7 +22,7 @@ export default function Home(props: HomePageProps) {
 				<Hero {...props.hero} />
 				<Featured {...props.featured} />
 				<Banner size='sm' {...props.bannerSmall} />
-				<Services />
+				<Services {...props.service} />
 				<Updates />
 				<Banner size='lg' {...props.bannerLarge} />
 			</Box>

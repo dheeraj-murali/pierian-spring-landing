@@ -1,8 +1,11 @@
 import { Flex, Heading } from '@chakra-ui/core';
 import React from 'react';
+import { v4 } from 'uuid';
 import { Item } from '../../components';
 
-export const Services = () => {
+export const Services = (props: ServicesProps) => {
+	const { title, subTitle, servicesList } = props;
+
 	return (
 		<Flex
 			flexDir='column'
@@ -13,14 +16,14 @@ export const Services = () => {
 			px={{ base: '5', xl: '20' }}
 		>
 			<Heading textAlign='center' my='10'>
-				World-class learning for anyone, anywhere
+				{title}
 			</Heading>
 
-			{[1, 2, 3, 4, 5].map((index) => {
+			{servicesList.map((service, index) => {
 				if (index % 2 == 0) {
-					return <Item key={index} revert />;
+					return <Item key={v4()} revert {...service} />;
 				} else {
-					return <Item key={index} />;
+					return <Item key={v4()} {...service} />;
 				}
 			})}
 		</Flex>

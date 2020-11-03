@@ -56,10 +56,28 @@ interface BannerProps extends Banner {
 	size: 'sm' | 'lg';
 }
 
+interface Service {
+	title: string;
+	subTitle: string;
+	image: string;
+	data: null;
+}
+
+interface ItemProps extends Service {
+	revert?: boolean;
+}
+
+interface ServicesProps {
+	title: string;
+	subTitle: string | null;
+	servicesList: Service[];
+}
+
 interface HomePageProps {
 	header: HeaderProps;
 	hero: HeroProps;
 	featured: FeatureProps;
 	bannerSmall: BannerProps;
 	bannerLarge: BannerProps;
+	service: ServicesProps;
 }

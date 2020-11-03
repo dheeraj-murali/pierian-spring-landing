@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { LazyImage } from '..';
 
-export const Item = (prop: ItemProp) => {
-	const { revert } = prop;
+export const Item = (prop: ItemProps) => {
+	const { revert, data, image, subTitle, title } = prop;
 	const [ref, inView] = useInView({ rootMargin: '-10%' });
 	const controls = useAnimation();
 
@@ -40,17 +40,9 @@ export const Item = (prop: ItemProp) => {
 						textAlign={{ base: 'center', md: 'left' }}
 						p='5'
 					>
-						<Heading size='lg'>
-							Similique corporis modi dolorem
-						</Heading>
+						<Heading size='lg'>{title}</Heading>
 						<Divider border='2px' />
-						<Text>
-							Pirian Spring is an e-learning phaltform for pharm.D
-							students. Amet ut vulputate pretium adipiscing
-							aliquet tellus, vestibulum enim. Lorem velit magna
-							ridiculus ut eu feugiat at a est. Feugiat lacus sed
-							venenatis, feugiat aliquam at justo, pulvinar.
-						</Text>
+						<Text>{subTitle}</Text>
 					</Box>
 
 					<Box
@@ -59,9 +51,9 @@ export const Item = (prop: ItemProp) => {
 						my='8'
 					>
 						<LazyImage
-							src='images/who.jpg'
-							fallbackImage='images/who-0.jpg'
-							alt='pharmacist with medicines in hand'
+							src={image}
+							fallbackImage={image}
+							alt={title}
 							borderRadius='lg'
 						/>
 					</Box>
@@ -70,7 +62,3 @@ export const Item = (prop: ItemProp) => {
 		</Box>
 	);
 };
-
-interface ItemProp {
-	revert?: boolean;
-}
