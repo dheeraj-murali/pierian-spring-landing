@@ -1,0 +1,76 @@
+{
+	"navbar": {
+		"links": {
+			"about": {
+				"label": "About",
+				"link": "#about"
+			}
+		},
+		"buttons": [
+			{
+				"button-text": "Log in",
+				"button-link": "#"
+			},
+			{
+				"button-text": "Sign Up",
+				"button-link": "#"
+			}
+		]
+	},
+	"hero": {
+		"button": {
+			"button-text": "Sign Up",
+			"button-link": "#"
+		},
+		"title": "Turn your dreams into reality",
+		"sub-title": "We help you fine tune your mind and knowledge, helping you become the best of you"
+	},
+	"featured": {
+		"title": "The online learning platform for pharm.D students.",
+		"sub-title": "Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec.",
+		"course-list": [
+			{
+				"course-name": null,
+				"course-image": null,
+				"banner": false
+			},
+			{
+				"course-name": "Courses on 100+ topics",
+				"course-image": null,
+				"banner": true
+			}
+		]
+	},
+	"join": {
+		"title": "Join 112+ students from around the world",
+		"sub-title": null,
+		"button": {
+			"button-text": "Sign Up",
+			"button-link": "#"
+		}
+	},
+	"service": {
+		"title": "World-class learning for anyone, anywhere",
+		"sub-title": null,
+		"services-list": [
+			{
+				"title": "Similique corporis modi dolorem",
+				"sub-title": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
+				"image": "",
+				"data": null
+			}
+		]
+	},
+	"updates": {
+		"title": "Check out the latest updates from our community.",
+		"subtitle": "Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec. Nunc neque vulputate dolor, platea ut urna risus elit non. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim."
+	},
+	"banner": {
+		"title": "Join 112+ students from around the world",
+		"sub-title": null,
+		"button": {
+			"button-text": "Sign Up",
+			"button-link": "#"
+		}
+	}
+}
