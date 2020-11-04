@@ -7,7 +7,7 @@ import { LazyImage } from '../LazyImage';
 export const FeatureCard = (props: FeatureCardProps) => {
 	const { imageUrl, title, banner } = props;
 
-	const [ref, inView] = useInView({ rootMargin: '-10%' });
+	const [ref, inView] = useInView({ rootMargin: '-10%', triggerOnce: true });
 	const controls = useAnimation();
 
 	useEffect(() => {

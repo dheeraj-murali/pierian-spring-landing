@@ -6,7 +6,7 @@ import { LazyImage } from '..';
 
 export const Item = (prop: ItemProps) => {
 	const { revert, data, image, subtitle, title } = prop;
-	const [ref, inView] = useInView({ rootMargin: '-10%' });
+	const [ref, inView] = useInView({ rootMargin: '-10%', triggerOnce: true });
 	const controls = useAnimation();
 
 	useEffect(() => {
