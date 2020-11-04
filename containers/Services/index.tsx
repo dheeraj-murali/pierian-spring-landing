@@ -2,6 +2,7 @@ import { Flex, Heading } from '@chakra-ui/core';
 import React from 'react';
 import { v4 } from 'uuid';
 import { Item } from '../../components';
+import { generateTitle } from '../../utils/generateTitle';
 
 export const Services = (props: ServicesProps) => {
 	const { title, subtitle, servicesList } = props;
@@ -16,7 +17,7 @@ export const Services = (props: ServicesProps) => {
 			px={{ base: '5', xl: '20' }}
 		>
 			<Heading textAlign='center' my='10'>
-				{title}
+				{generateTitle(title)}
 			</Heading>
 
 			{servicesList.map((service, index) => {

@@ -68,7 +68,7 @@ interface ItemProps extends Service {
 }
 
 interface ServicesProps {
-	title: string;
+	title: Title;
 	subtitle: string | null;
 	servicesList: Service[];
 }
