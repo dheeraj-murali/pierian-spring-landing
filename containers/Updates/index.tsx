@@ -2,7 +2,9 @@ import { Box, Heading, Text } from '@chakra-ui/core';
 import React from 'react';
 import { Card } from '../../components';
 
-export const Updates = () => {
+export const Updates = (props: UpdateProps) => {
+	const { title, subtitle } = props;
+
 	return (
 		<Box
 			display='inline-flex'
@@ -20,16 +22,8 @@ export const Updates = () => {
 				textAlign={{ base: 'center', md: 'left' }}
 				p='2'
 			>
-				<Heading my='5'>
-					Check out the latest updates from our community.
-				</Heading>
-				<Text>
-					Feugiat lacus sed venenatis, feugiat aliquam at justo,
-					pulvinar. Id mattis a scelerisque donec. Nunc neque
-					vulputate dolor, platea ut urna risus elit non. Amet ut
-					vulputate pretium adipiscing aliquet tellus, vestibulum
-					enim.
-				</Text>
+				<Heading my='5'>{title}</Heading>
+				<Text>{subtitle}</Text>
 			</Box>
 
 			<Box

@@ -1,62 +1,117 @@
 {
-	"navbar": {
-		"links": {
-			"about": {
+	"header": {
+		"links": [
+			{
 				"label": "About",
-				"link": "#about"
+				"url": "#about"
 			}
-		},
+		],
 		"buttons": [
 			{
-				"button-text": "Log in",
-				"button-link": "#"
+				"label": "Log in",
+				"url": "#",
+				"variant": "outline",
+				"variantColor": "blue"
 			},
 			{
-				"button-text": "Sign Up",
-				"button-link": "#"
+				"label": "Sign Up",
+				"url": "#",
+				"variant": "solid",
+				"variantColor": "green"
 			}
 		]
 	},
 	"hero": {
+		"image": "images/hero.jpg",
 		"button": {
-			"button-text": "Sign Up",
-			"button-link": "#"
+			"label": "Sign Up",
+			"url": "#",
+			"variant": "solid",
+			"variantColor": "gray"
 		},
-		"title": "Turn your dreams into reality",
-		"sub-title": "We help you fine tune your mind and knowledge, helping you become the best of you"
+		"title": {
+			"text": "Turn your dreams into reality",
+			"highlightGreen": "dreams",
+			"highlightBlue": "reality"
+		},
+		"subtitle": "We help you fine tune your mind and knowledge, helping you become the best of you"
 	},
 	"featured": {
-		"title": "The online learning platform for pharm.D students.",
-		"sub-title": "Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec.",
-		"course-list": [
+		"title": {
+			"text": "The online learning platform for pharm.D students.",
+			"highlightGreen": "online",
+			"highlightBlue": "pharm.D"
+		},
+		"subtitle": "With regularly updating courses in order to keep pace with the continuously developing technology and topics in the field of pharmaceutical sciences. We provide quality study material are carefully scrutinized and screened by qualified personnel-academic and professionals.",
+		"courseList": [
 			{
-				"course-name": null,
-				"course-image": null,
+				"courseName": "Pathophysiology",
+				"courseImage": "images/Pathophysiology.jpg",
 				"banner": false
 			},
 			{
-				"course-name": "Courses on 100+ topics",
-				"course-image": null,
+				"courseName": "Pharmacognosy",
+				"courseImage": "images/Pharmacognosy.jpg",
+				"banner": false
+			},
+			{
+				"courseName": "Pharmacotherapeutics",
+				"courseImage": "images/Pharmacotherapeutics.jpg",
+				"banner": false
+			},
+			{
+				"courseName": "Courses on 100+ topics",
+				"courseImage": null,
 				"banner": true
 			}
 		]
 	},
-	"join": {
+	"bannerSmall": {
 		"title": "Join 112+ students from around the world",
-		"sub-title": null,
+		"subtitle": null,
 		"button": {
-			"button-text": "Sign Up",
-			"button-link": "#"
+			"label": "Sign Up",
+			"url": "#",
+			"variant": "solid",
+			"variantColor": "gray"
 		}
 	},
 	"service": {
-		"title": "World-class learning for anyone, anywhere",
-		"sub-title": null,
-		"services-list": [
+		"title": {
+			"text": "World-class learning for anyone anywhere",
+			"highlightGreen": "anyone",
+			"highlightBlue": "anywhere"
+		},
+		"subtitle": null,
+		"servicesList": [
 			{
-				"title": "Similique corporis modi dolorem",
-				"sub-title": "Pirian Spring is an e-learning phaltform for pharm.D students. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim. Lorem velit magna ridiculus ut eu feugiat at a est. Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar.",
-				"image": "",
+				"title": "Exquisite studying experiences that connects the globe",
+				"subtitle": "The duration of the Pharm. D course is five years of academics; an annual exam (X 5 per year) plus an internship of one year. Tests are conducted every month to assess the students’ progress. As and when required, the weak students are provided with additional texts to enable them to improve and keep pace with the majority in the class. This exercise is considered beneficial to maintain a high quality of intellectual prowess among all the pupils.",
+				"image": "images/study.jpg",
+				"data": null
+			},
+			{
+				"title": "Qualified Educators",
+				"subtitle": "All subjects are taught in an exam oriented manner in order to attain the highest possible marks. If you have any doubt/s related to a specific subject, please do not hesitate to send us an email. On receipt, the query will be handled by an experienced faculty who would help you with an appropriate reply based on the latest information at the earliest.",
+				"image": "images/teacher.jpg",
+				"data": null
+			},
+			{
+				"title": "Cloud-Hosted Platform",
+				"subtitle": "We assure you that the content is always accessible from anywhere, worldwide throughout the day and night-24 hours. This clearly indicates the flexibility of our study program to suit every individual’s convenience.",
+				"image": "images/server.jpg",
+				"data": null
+			},
+			{
+				"title": "Revision of Classes",
+				"subtitle": "Another major salient feature of this program is that a student has the liberty and freedom to refer to earlier pages of study- topics and chapters. This enables them to ensure that they would not be missing on anything at anytime related to their chosen subject.",
+				"image": "images/class.jpg",
+				"data": null
+			},
+			{
+				"title": "Reports and Analysis",
+				"subtitle": "Every six months the average of the six monthly tests is tabulated and every student’s performance is monitored very closely in order to enhance his/her academic competency. The test results are sent to the students after highlighting the errors and with the rectified answers so that he/she gets a clear cut idea about their academic level respectively. The weak are given opportunities to improve their academic levels during the entire period of study.",
+				"image": "images/report.jpg",
 				"data": null
 			}
 		]
@@ -65,12 +120,14 @@
 		"title": "Check out the latest updates from our community.",
 		"subtitle": "Feugiat lacus sed venenatis, feugiat aliquam at justo, pulvinar. Id mattis a scelerisque donec. Nunc neque vulputate dolor, platea ut urna risus elit non. Amet ut vulputate pretium adipiscing aliquet tellus, vestibulum enim."
 	},
-	"banner": {
+	"bannerLarge": {
 		"title": "Join 112+ students from around the world",
-		"sub-title": null,
+		"subtitle": null,
 		"button": {
-			"button-text": "Sign Up",
-			"button-link": "#"
+			"label": "Sign Up",
+			"url": "#",
+			"variant": "solid",
+			"variantColor": "gray"
 		}
 	}
 }

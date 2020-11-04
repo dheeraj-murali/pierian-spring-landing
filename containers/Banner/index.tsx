@@ -1,8 +1,8 @@
 import { Box, Button, Flex, Heading } from '@chakra-ui/core';
 import React from 'react';
 
-export const Banner = (props: JoinProps) => {
-	const { size } = props;
+export const Banner = (props: BannerProps) => {
+	const { size, title, subtitle, button } = props;
 
 	const padding = {
 		base: size === 'sm' ? 0 : 5,
@@ -28,16 +28,12 @@ export const Banner = (props: JoinProps) => {
 				}}
 			>
 				<Heading color='white' my='5'>
-					Join 112+ students from around the world
+					{title}
 				</Heading>
-				<Button my='5' size='lg'>
-					Sign up
+				<Button my='5' size='lg' {...button}>
+					{button.label}
 				</Button>
 			</Box>
 		</Flex>
 	);
 };
-
-declare interface JoinProps {
-	size: 'sm' | 'lg';
-}
