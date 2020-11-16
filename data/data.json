@@ -11,13 +11,13 @@
 				"label": "Log in",
 				"url": "#",
 				"variant": "outline",
-				"variantColor": "blue"
+				"colorScheme": "blue"
 			},
 			{
 				"label": "Sign Up",
 				"url": "#",
 				"variant": "solid",
-				"variantColor": "green"
+				"colorScheme": "green"
 			}
 		]
 	},
@@ -27,7 +27,7 @@
 			"label": "Sign Up",
 			"url": "#",
 			"variant": "solid",
-			"variantColor": "gray"
+			"colorScheme": "gray"
 		},
 		"title": {
 			"text": "Turn your dreams into reality",
@@ -73,7 +73,7 @@
 			"label": "Sign Up",
 			"url": "#",
 			"variant": "solid",
-			"variantColor": "gray"
+			"colorScheme": "gray"
 		}
 	},
 	"service": {
@@ -127,7 +127,7 @@
 			"label": "Sign Up",
 			"url": "#",
 			"variant": "solid",
-			"variantColor": "gray"
+			"colorScheme": "gray"
 		}
 	}
 }

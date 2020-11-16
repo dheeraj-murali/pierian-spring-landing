@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/core';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -18,7 +18,8 @@ export const FeatureCard = (props: FeatureCardProps) => {
 
 	const ImageCard = () => (
 		<Box
-			size='2xs'
+			w='2xs'
+			h='2xs'
 			rounded='lg'
 			overflow='hidden'
 			shadow='lg'
@@ -46,7 +47,8 @@ export const FeatureCard = (props: FeatureCardProps) => {
 
 	const DataCard = () => (
 		<Flex
-			size='2xs'
+			w='2xs'
+			h='2xs'
 			rounded='lg'
 			shadow='lg'
 			p='5'

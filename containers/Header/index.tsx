@@ -1,11 +1,12 @@
 import {
-	AccordionHeader,
+	Accordion,
+	AccordionButton,
 	AccordionItem,
 	AccordionPanel,
 	Box,
 	Button,
 	Flex,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import React from 'react';
 import { MdMenu } from 'react-icons/md';
 import { Logo } from '../../components';
@@ -30,7 +31,7 @@ export const Header = (props: HeaderProps) => {
 						<Button
 							key={v4()}
 							variant={button.variant}
-							variantColor={button.variantColor}
+							colorScheme={button.colorScheme}
 							mx='2'
 						>
 							{button.label}
@@ -39,22 +40,27 @@ export const Header = (props: HeaderProps) => {
 				</Flex>
 			</Box>
 
-			<AccordionItem display={{ base: 'block', md: 'none' }} w='full'>
-				<AccordionHeader display='flex' justifyContent='space-between'>
-					<Logo />
-					<Box as={MdMenu} size='32px' color='blue.500' />
-				</AccordionHeader>
-				<AccordionPanel>
-					<Flex>
-						<Button variant='outline' variantColor='blue' mx='2'>
-							Log in
-						</Button>
-						<Button variantColor='green' mx='2' shadow='sm'>
-							Sign up
-						</Button>
-					</Flex>
-				</AccordionPanel>
-			</AccordionItem>
+			<Accordion>
+				<AccordionItem display={{ base: 'block', md: 'none' }} w='full'>
+					<AccordionButton
+						display='flex'
+						justifyContent='space-between'
+					>
+						<Logo />
+						<Box as={MdMenu} w='32px' h='32px' color='blue.500' />
+					</AccordionButton>
+					<AccordionPanel>
+						<Flex>
+							<Button variant='outline' colorScheme='blue' mx='2'>
+								Log in
+							</Button>
+							<Button colorScheme='green' mx='2' shadow='sm'>
+								Sign up
+							</Button>
+						</Flex>
+					</AccordionPanel>
+				</AccordionItem>
+			</Accordion>
 		</Box>
 	);
 };

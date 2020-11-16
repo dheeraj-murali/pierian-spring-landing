@@ -1,4 +1,4 @@
-import { Box, Image } from '@chakra-ui/core';
+import { Box, Image } from '@chakra-ui/react';
 import React, { CSSProperties, useState } from 'react';
 
 export const LazyImage = (props: LazyImageProps) => {
