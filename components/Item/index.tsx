@@ -1,5 +1,12 @@
-import { Box, Divider, Flex, Heading, ScaleFade, Text } from '@chakra-ui/react';
-import Image from 'next/image';
+import {
+	Box,
+	Divider,
+	Flex,
+	Heading,
+	ScaleFade,
+	Text,
+	Image,
+} from '@chakra-ui/react';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -25,7 +32,7 @@ export const Item = (prop: ItemProps) => {
 						p='5'
 					>
 						<Heading size='lg'>{title}</Heading>
-						<Divider border='2px' />
+						<Divider border='2px' my='5' />
 						<Text>{subtitle}</Text>
 					</Box>
 
@@ -38,8 +45,8 @@ export const Item = (prop: ItemProps) => {
 						<Image
 							src={image}
 							alt={title}
-							width='600'
-							height='500'
+							width='full'
+							height='full'
 						/>
 					</Box>
 				</Flex>

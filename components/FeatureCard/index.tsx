@@ -1,5 +1,4 @@
-import { Box, Flex, Heading, ScaleFade, Text } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Box, Flex, Heading, ScaleFade, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -24,7 +23,7 @@ export const FeatureCard = (props: FeatureCardProps) => {
 				borderBottom='5px solid'
 				borderBottomColor='brandGreen.600'
 			>
-				<Image src={imageUrl} alt={title} width='300' height='250' />
+				<Image src={imageUrl} alt={title} width='full' height='full' />
 			</Box>
 
 			<Box h='full' p='5'>

@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Img } from '@chakra-ui/react';
+import { Box, Heading, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 
 export const Card = () => {
@@ -29,7 +29,12 @@ export const Card = () => {
 				borderBottom='5px solid'
 				borderBottomColor='brandGreen.600'
 			>
-				<Img src={property.imageUrl} alt={property.imageAlt} />
+				<Image
+					src={property.imageUrl}
+					alt={property.imageAlt}
+					width='full'
+					height='full'
+				/>
 			</Box>
 
 			<Box p='5'>
