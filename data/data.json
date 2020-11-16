@@ -22,7 +22,7 @@
 		]
 	},
 	"hero": {
-		"image": "images/hero.jpg",
+		"image": "/images/hero.jpg",
 		"button": {
 			"label": "Sign Up",
 			"url": "#",
@@ -46,17 +46,17 @@
 		"courseList": [
 			{
 				"courseName": "Pathophysiology",
-				"courseImage": "images/Pathophysiology.jpg",
+				"courseImage": "/images/Pathophysiology.jpg",
 				"banner": false
 			},
 			{
 				"courseName": "Pharmacognosy",
-				"courseImage": "images/Pharmacognosy.jpg",
+				"courseImage": "/images/Pharmacognosy.jpg",
 				"banner": false
 			},
 			{
 				"courseName": "Pharmacotherapeutics",
-				"courseImage": "images/Pharmacotherapeutics.jpg",
+				"courseImage": "/images/Pharmacotherapeutics.jpg",
 				"banner": false
 			},
 			{
@@ -87,31 +87,31 @@
 			{
 				"title": "Exquisite studying experiences that connects the globe",
 				"subtitle": "The duration of the Pharm. D course is five years of academics; an annual exam (X 5 per year) plus an internship of one year. Tests are conducted every month to assess the students’ progress. As and when required, the weak students are provided with additional texts to enable them to improve and keep pace with the majority in the class. This exercise is considered beneficial to maintain a high quality of intellectual prowess among all the pupils.",
-				"image": "images/study.jpg",
+				"image": "/images/study.jpg",
 				"data": null
 			},
 			{
 				"title": "Qualified Educators",
 				"subtitle": "All subjects are taught in an exam oriented manner in order to attain the highest possible marks. If you have any doubt/s related to a specific subject, please do not hesitate to send us an email. On receipt, the query will be handled by an experienced faculty who would help you with an appropriate reply based on the latest information at the earliest.",
-				"image": "images/teacher.jpg",
+				"image": "/images/teacher.jpg",
 				"data": null
 			},
 			{
 				"title": "Cloud-Hosted Platform",
 				"subtitle": "We assure you that the content is always accessible from anywhere, worldwide throughout the day and night-24 hours. This clearly indicates the flexibility of our study program to suit every individual’s convenience.",
-				"image": "images/server.jpg",
+				"image": "/images/server.jpg",
 				"data": null
 			},
 			{
 				"title": "Revision of Classes",
 				"subtitle": "Another major salient feature of this program is that a student has the liberty and freedom to refer to earlier pages of study- topics and chapters. This enables them to ensure that they would not be missing on anything at anytime related to their chosen subject.",
-				"image": "images/class.jpg",
+				"image": "/images/class.jpg",
 				"data": null
 			},
 			{
 				"title": "Reports and Analysis",
 				"subtitle": "Every six months the average of the six monthly tests is tabulated and every student’s performance is monitored very closely in order to enhance his/her academic competency. The test results are sent to the students after highlighting the errors and with the rectified answers so that he/she gets a clear cut idea about their academic level respectively. The weak are given opportunities to improve their academic levels during the entire period of study.",
-				"image": "images/report.jpg",
+				"image": "/images/report.jpg",
 				"data": null
 			}
 		]
