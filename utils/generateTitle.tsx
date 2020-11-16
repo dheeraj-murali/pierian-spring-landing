@@ -6,13 +6,13 @@ export const generateTitle = (title: Title) => {
 	const { text } = title;
 
 	const blueHighlight = (
-		<Text key={v4()} as='span' color='brandBlue.400'>
+		<Text key={v4()} as='span' color='brandBlue.500'>
 			{' '}
 			{title.highlightBlue}
 		</Text>
 	);
 	const greenHighlight = (
-		<Text key={v4()} as='span' color='brandGreen.400'>
+		<Text key={v4()} as='span' color='brandGreen.500'>
 			{' '}
 			{title.highlightGreen}
 		</Text>
