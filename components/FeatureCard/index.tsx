@@ -1,20 +1,12 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
-import { motion, useAnimation } from 'framer-motion';
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { Box, Flex, Heading, ScaleFade, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export const FeatureCard = (props: FeatureCardProps) => {
 	const { imageUrl, title, banner } = props;
 
-	const [ref, inView] = useInView({ rootMargin: '-10%', triggerOnce: true });
-	const controls = useAnimation();
-
-	useEffect(() => {
-		if (inView) {
-			controls.start({ scale: 1 });
-		}
-	}, [controls, inView]);
+	const [ref, inView] = useInView({ triggerOnce: true });
 
 	const ImageCard = () => (
 		<Box
@@ -61,17 +53,9 @@ export const FeatureCard = (props: FeatureCardProps) => {
 
 	return (
 		<Box ref={ref}>
-			<motion.div
-				initial={{ scale: 0.5 }}
-				animate={controls}
-				transition={{
-					type: 'spring',
-					damping: 10,
-					stiffness: 100,
-				}}
-			>
+			<ScaleFade initialScale={0.9} in={inView}>
 				{banner ? <DataCard /> : <ImageCard />}
-			</motion.div>
+			</ScaleFade>
 		</Box>
 	);
 };

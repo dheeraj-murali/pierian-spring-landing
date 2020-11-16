@@ -1,31 +1,15 @@
-import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/react';
-import { motion, useAnimation } from 'framer-motion';
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { Box, Divider, Flex, Heading, ScaleFade, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export const Item = (prop: ItemProps) => {
 	const { revert, data, image, subtitle, title } = prop;
 	const [ref, inView] = useInView({ rootMargin: '-10%', triggerOnce: true });
-	const controls = useAnimation();
-
-	useEffect(() => {
-		if (inView) {
-			controls.start({ scale: 1 });
-		}
-	}, [controls, inView]);
 
 	return (
 		<Box ref={ref} w='full'>
-			<motion.div
-				initial={{ scale: 0.5 }}
-				animate={controls}
-				transition={{
-					type: 'spring',
-					damping: 10,
-					stiffness: 100,
-				}}
-			>
+			<ScaleFade initialScale={0.9} in={inView}>
 				<Flex
 					alignItems='center'
 					justifyContent='space-evenly'
@@ -59,7 +43,7 @@ export const Item = (prop: ItemProps) => {
 						/>
 					</Box>
 				</Flex>
-			</motion.div>
+			</ScaleFade>
 		</Box>
 	);
 };
