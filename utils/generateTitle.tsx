@@ -1,4 +1,4 @@
-import { Text } from '@chakra-ui/core';
+import { Text } from '@chakra-ui/react';
 import React from 'react';
 import { v4 } from 'uuid';
 

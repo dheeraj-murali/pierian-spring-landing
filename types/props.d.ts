@@ -5,7 +5,7 @@ interface Link {
 
 interface Button {
 	variant: 'link' | 'solid' | 'outline' | 'ghost' | 'unstyled';
-	variantColor: 'green | gray | blue';
+	colorScheme: 'green | gray | blue';
 	label: string;
 	url: string;
 }

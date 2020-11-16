@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/core';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import { v4 } from 'uuid';
 import { FeatureCard } from '../../components';

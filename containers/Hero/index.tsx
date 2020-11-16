@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from '@chakra-ui/core';
+import { Button, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import { generateTitle } from '../../utils/generateTitle';
 
