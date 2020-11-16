@@ -1,12 +1,9 @@
-import { Box, Flex, Heading, ScaleFade, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 
 export const FeatureCard = (props: FeatureCardProps) => {
 	const { imageUrl, title, banner } = props;
-
-	const [ref, inView] = useInView({ triggerOnce: true });
 
 	const ImageCard = () => (
 		<Box
@@ -51,11 +48,5 @@ export const FeatureCard = (props: FeatureCardProps) => {
 		</Flex>
 	);
 
-	return (
-		<Box ref={ref}>
-			<ScaleFade initialScale={0.9} in={inView}>
-				{banner ? <DataCard /> : <ImageCard />}
-			</ScaleFade>
-		</Box>
-	);
+	return <Box>{banner ? <DataCard /> : <ImageCard />}</Box>;
 };

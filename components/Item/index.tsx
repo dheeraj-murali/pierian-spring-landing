@@ -5,7 +5,10 @@ import { useInView } from 'react-intersection-observer';
 
 export const Item = (prop: ItemProps) => {
 	const { revert, image, subtitle, title } = prop;
-	const [ref, inView] = useInView({ triggerOnce: true });
+	const [ref, inView] = useInView({
+		rootMargin: '-15%',
+		triggerOnce: true,
+	});
 
 	return (
 		<Box ref={ref} w='full'>
