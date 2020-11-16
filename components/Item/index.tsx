@@ -2,7 +2,7 @@ import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { LazyImage } from '..';
+import Image from 'next/image';
 
 export const Item = (prop: ItemProps) => {
 	const { revert, data, image, subtitle, title } = prop;
@@ -30,9 +30,9 @@ export const Item = (prop: ItemProps) => {
 					alignItems='center'
 					justifyContent='space-evenly'
 					flexDir={revert ? 'row-reverse' : 'row'}
-					flexWrap='wrap'
+					flexWrap='wrap-reverse'
 					w='full'
-					my='5'
+					my='10'
 					px={{ xl: '10' }}
 				>
 					<Box
@@ -47,14 +47,15 @@ export const Item = (prop: ItemProps) => {
 
 					<Box
 						w={{ base: 'xs', md: 'xs', lg: 'md' }}
+						h={{ base: 'xs', md: 'xs', lg: 'sm' }}
 						borderRadius='lg'
-						my='8'
+						overflow='hidden'
 					>
-						<LazyImage
+						<Image
 							src={image}
-							fallbackImage={image}
 							alt={title}
-							borderRadius='lg'
+							width='600'
+							height='500'
 						/>
 					</Box>
 				</Flex>

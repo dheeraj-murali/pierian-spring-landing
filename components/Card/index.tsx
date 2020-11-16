@@ -1,6 +1,5 @@
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Text, Img } from '@chakra-ui/react';
 import React from 'react';
-import { LazyImage } from '../LazyImage';
 
 export const Card = () => {
 	const property = {
@@ -30,11 +29,7 @@ export const Card = () => {
 				borderBottom='5px solid'
 				borderBottomColor='brandGreen.600'
 			>
-				<LazyImage
-					fallbackImage={property.imageUrl}
-					src={property.imageUrl}
-					alt={property.imageAlt}
-				/>
+				<Img src={property.imageUrl} alt={property.imageAlt} />
 			</Box>
 
 			<Box p='5'>

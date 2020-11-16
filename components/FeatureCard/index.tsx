@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { LazyImage } from '../LazyImage';
+import Image from 'next/image';
 
 export const FeatureCard = (props: FeatureCardProps) => {
 	const { imageUrl, title, banner } = props;
@@ -32,11 +32,7 @@ export const FeatureCard = (props: FeatureCardProps) => {
 				borderBottom='5px solid'
 				borderBottomColor='brandGreen.600'
 			>
-				<LazyImage
-					fallbackImage={imageUrl}
-					src={imageUrl}
-					alt={title}
-				/>
+				<Image src={imageUrl} alt={title} width='300' height='250' />
 			</Box>
 
 			<Box h='full' p='5'>
