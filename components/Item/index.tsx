@@ -1,18 +1,11 @@
-import {
-	Box,
-	Divider,
-	Flex,
-	Heading,
-	ScaleFade,
-	Text,
-	Image,
-} from '@chakra-ui/react';
+import { Box, Divider, Flex, Heading, ScaleFade, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
 export const Item = (prop: ItemProps) => {
-	const { revert, data, image, subtitle, title } = prop;
-	const [ref, inView] = useInView({ rootMargin: '-10%', triggerOnce: true });
+	const { revert, image, subtitle, title } = prop;
+	const [ref, inView] = useInView({ triggerOnce: true });
 
 	return (
 		<Box ref={ref} w='full'>
@@ -45,8 +38,9 @@ export const Item = (prop: ItemProps) => {
 						<Image
 							src={image}
 							alt={title}
-							width='full'
-							height='full'
+							width='500'
+							height='500'
+							layout='responsive'
 						/>
 					</Box>
 				</Flex>

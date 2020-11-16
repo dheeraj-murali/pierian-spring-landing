@@ -1,9 +1,10 @@
-import { Box, Heading, Text, Image } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 import React from 'react';
 
 export const Card = () => {
 	const property = {
-		imageUrl: 'https://bit.ly/2k1H1t6',
+		imageUrl: '/images/dummy.jpg',
 		imageAlt: 'Rear view of modern home with pool',
 		beds: 3,
 		baths: 2,
@@ -28,12 +29,13 @@ export const Card = () => {
 				h='2xs'
 				borderBottom='5px solid'
 				borderBottomColor='brandGreen.600'
+				overflow='hidden'
 			>
 				<Image
 					src={property.imageUrl}
 					alt={property.imageAlt}
-					width='full'
-					height='full'
+					width='500'
+					height='400'
 				/>
 			</Box>
 
