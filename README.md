@@ -1,5 +1,7 @@
 🚧 work in progress
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4769064f-6a73-403a-bf02-879370e6570d/deploy-status)](https://app.netlify.com/sites/pierianspring/deploys)
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
