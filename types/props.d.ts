@@ -87,3 +87,10 @@ interface HomePageProps {
 	service: ServicesProps;
 	updates: UpdateProps;
 }
+
+interface ImgProps {
+	src: string;
+	alt: string;
+	width: string;
+	height: string;
+}
