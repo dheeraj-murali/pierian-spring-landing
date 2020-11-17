@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import React from 'react';
+import { Img } from '../Img';
 
 export const FeatureCard = (props: FeatureCardProps) => {
 	const { imageUrl, title, banner } = props;
@@ -21,7 +21,7 @@ export const FeatureCard = (props: FeatureCardProps) => {
 				borderBottom='5px solid'
 				borderBottomColor='brandGreen.600'
 			>
-				<Image src={imageUrl} alt={title} width='300' height='200' />
+				<Img src={imageUrl} alt={title} width='300' height='200' />
 			</Box>
 
 			<Box h='full' p='5'>

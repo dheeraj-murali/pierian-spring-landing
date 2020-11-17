@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import React from 'react';
+import { Img } from '../Img';
 
 export const Card = () => {
 	const property = {
@@ -31,7 +31,7 @@ export const Card = () => {
 				borderBottomColor='brandGreen.600'
 				overflow='hidden'
 			>
-				<Image
+				<Img
 					src={property.imageUrl}
 					alt={property.imageAlt}
 					width='500'
